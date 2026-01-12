@@ -1,17 +1,25 @@
-import { departments } from "./data/employee_data";
+import { departments } from "./data/employee_data.js";
 
-const populateEmployeeList = (listNode, employees) => {
-    employees.forEach(employees => {
-        const newLiNode = document.createElement("li");
+const populateEmployeeList = (listNode, departments) => {
+    departments.forEach(department => {
+        const departmentHeader = document.createElement("h3");
+        departmentHeader.textContent = department.name;
+        listNode.appendChild(departmentHeader);
 
-        newLiNode.innerHTML = `<a href="#">${employees}</a>`;
+        const ul = document.createElement("ul");
 
-        listNode.appendChild(newLiNode);
+        department.employees.forEach(employee => {
+            const li = document.createElement("li");
+            const fullname = employee.firstName + " " + employee.lastName;
+            li.innerHTML = `<a href="#">${fullname}</a>`;
+            ul.appendChild(li);
+        });
+        listNode.appendChild(ul);
     });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
     const employeeListNode = document.querySelector(".employees__list");
 
-    populateEmployeeList(employeeListNode, employees);
+    populateEmployeeList(employeeListNode, departments);
 });
