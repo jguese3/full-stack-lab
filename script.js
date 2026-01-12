@@ -11,7 +11,7 @@ const populateEmployeeList = (listNode, departments) => {
         department.employees.forEach(employee => {
             const li = document.createElement("li");
             const fullname = employee.firstName + " " + employee.lastName;
-            li.innerHTML = `<a href="#">${fullname}</a>`;
+            li.innerHTML = `<a>${fullname}</a>`;
             ul.appendChild(li);
         });
         listNode.appendChild(ul);
