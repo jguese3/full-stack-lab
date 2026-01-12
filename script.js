@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     populateEmployeeList(employeeListNode, departments);
 });
+
+const currentYear = new Date().getFullYear();
+
+const footer = document.getElementById("currentYear");
+
+footer.textContent = `Copyright Pixell River Financial ${currentYear}`;
+
