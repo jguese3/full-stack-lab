@@ -1,10 +1,10 @@
-const employees = ["Jarone", "Lars", "Christian", "Zach"]
+import { departments } from "./data/employee_data";
 
 const populateEmployeeList = (listNode, employees) => {
     employees.forEach(employees => {
         const newLiNode = document.createElement("li");
 
-        newLiNode.innerHTML = `<a href="#">${term}</a>`;
+        newLiNode.innerHTML = `<a href="#">${employees}</a>`;
 
         listNode.appendChild(newLiNode);
     });
