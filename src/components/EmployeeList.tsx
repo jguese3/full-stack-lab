@@ -2,17 +2,17 @@ import { departments } from "./employee_data";
 
 export function EmployeeList() {
     const departmentName = departments.map(department =>
-        <li key={department.name}>
+        <p key={department.name}>
             <h2>{department.name}</h2>
 
-            <ul>
+            <p>
                 {department.employees.map((employee, i) => (
-                    <li key={i}>
+                    <p key={i}>
                         {employee.firstName} {employee.lastName}
-                    </li>
+                    </p>
                 ))}
-            </ul>
-        </li>
+            </p>
+        </p>
     );
-    return <ul>{departmentName}</ul>;
+    return <p>{departmentName}</p>;
 }
