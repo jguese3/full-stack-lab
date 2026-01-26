@@ -1,11 +1,14 @@
-import './App.css'
-import { EmployeeList } from './components/EmployeeList'
+import { Employees } from './components/features/employees/Employees'
+import { Footer } from './components/layout/footer/Footer'
+import { Header } from './components/layout/header/Header'
 
 function App() {
+
   return (
     <>
-    <h1>Employee List</h1>
-      <EmployeeList/>
+      <Header />
+      <Employees />
+      <Footer />
     </>
   )
 }
