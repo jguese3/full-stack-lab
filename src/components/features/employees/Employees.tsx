@@ -4,7 +4,7 @@ import styles from "./Employees.module.css";
 export function Employees() {
     const departmentListElement = departmentData.map(d => {
         return <section>
-            <h2>{d.name}</h2>
+            <h2>{d.departmentName}</h2>
             <ul className={styles.employees}>
                 {d.employees.map(e => <li>{e.firstName} {e.lastName}</li>)}
             </ul>
