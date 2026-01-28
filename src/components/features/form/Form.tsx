@@ -37,7 +37,6 @@ export function Form({
         <input
           value={firstName}
           onChange={e => setFirstName(e.target.value)}
-          required
         />
       </label>
       <br />
@@ -47,7 +46,6 @@ export function Form({
         <input
           value={lastName}
           onChange={e => setLastName(e.target.value)}
-          required
         />
       </label>
       <br />

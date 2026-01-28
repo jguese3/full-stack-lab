@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <Employees/>
+      <Employees departments={departments}/>
       <Form 
         departments={departments} 
         updateDepartments={setDepartments} 
