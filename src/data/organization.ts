@@ -7,7 +7,7 @@ export const organizationData: Organization[] = [
   { "role": "VP Client Services", "name": "Richa Kaur" },
   { "role": "CIO", "name": "Josee Benjamin" },
   { "role": "VP Sales & Marketing", "name": "Vincent Grey" },
-  { "role": "Director Financial and Audit Services", "name": "Rupa Kharki", "pronouns": "she/her/hers" },
+  { "role": "Director Financial and Audit Services", "name": "Rupa Kharki"},
   { "role": "Director Human Resources", "name": "Xun Kuang" },
   { "role": "Director Legal Services / General Counsel", "name": "Stien Pedersen" },
   { "role": "Director Information Technology", "name": "Sandra Bear" },
